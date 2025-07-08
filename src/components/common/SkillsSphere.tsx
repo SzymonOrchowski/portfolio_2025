@@ -30,7 +30,7 @@ const skillIcons = [
 
 function SkillIcon(props: any) {
   const mesh = useRef<THREE.Mesh>(null!);
-  const texture = useTexture(props.texture);
+  const texture = useTexture(props.texture as string);
 
   return (
     <mesh {...props} ref={mesh}>
