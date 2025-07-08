@@ -1,11 +1,11 @@
 .myWorks {
   padding: 100px 20px;
-  background-color: #181818;
+  background-color: var(--background-secondary);
 }
 
 .myWorksHeader {
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 50px;
 
   h1 {
@@ -30,15 +30,15 @@
 
   button {
     padding: 10px 15px;
-    border: 1px solid #616165;
-    background-color: #1d1d1d;
-    color: #616165;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-secondary);
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover:not(:disabled) {
-      background-color: #616165;
-      color: #1d1d1d;
+      background-color: var(--text-secondary);
+      color: var(--background-color);
     }
 
     &:disabled {
@@ -47,9 +47,9 @@
     }
 
     &.active {
-      background-color: #6f70c4;
+      background-color: var(--primary-color);
       color: #ffffff;
-      border-color: #6f70c4;
+      border-color: var(--primary-color);
     }
   }
 }

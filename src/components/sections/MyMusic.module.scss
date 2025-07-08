@@ -1,7 +1,7 @@
 .myMusic {
   padding: 100px 20px;
-  background-color: #2a2a2a;
-  color: #fff;
+  background-color: var(--background-secondary);
+  color: var(--text-color);
 }
 
 .myMusicHeader {
@@ -14,17 +14,17 @@
   }
   p {
     font-size: 18px;
-    color: #ccc;
+    color: var(--text-secondary);
   }
 }
 
 .audioPlayerFull {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #1d1d1d;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #444;
+  border: 1px solid var(--border-color);
 }
 
 .audioPlayerTopBar {
@@ -48,7 +48,7 @@
   }
   span {
     font-size: 14px;
-    color: #ccc;
+    color: var(--text-secondary);
   }
 }
 
@@ -75,7 +75,7 @@
   -webkit-appearance: none;
   width: 100%;
   height: 8px;
-  background: #555;
+  background: var(--text-secondary);
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -90,7 +90,7 @@
     appearance: none;
     width: 18px;
     height: 18px;
-    background: #6f70c4;
+    background: var(--primary-color);
     cursor: pointer;
     border-radius: 50%;
   }
@@ -98,7 +98,7 @@
   &::-moz-range-thumb {
     width: 18px;
     height: 18px;
-    background: #6f70c4;
+    background: var(--primary-color);
     cursor: pointer;
     border-radius: 50%;
   }
@@ -134,11 +134,11 @@
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #2a2a2a;
+    background-color: var(--background-secondary);
   }
 }
 
 .activeTrack {
-  background-color: #6f70c4;
+  background-color: var(--primary-color);
   color: #fff;
 }

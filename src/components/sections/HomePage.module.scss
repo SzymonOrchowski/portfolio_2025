@@ -1,5 +1,5 @@
 .welcomePageContainer {
-  background-color: #1d1d1d;
+  background-color: var(--background-color);
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
 
 .welcomeBox {
   width: 90%;
-  color: #ffffff;
+  color: var(--text-color);
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
@@ -44,7 +44,7 @@
 }
 
 .welcomeBoxHeaderBoxLetterS {
-  color: #6f70c4;
+  color: var(--primary-color);
   font-size: 70px;
 
   @media (max-width: 1000px) {
@@ -57,7 +57,7 @@
 }
 
 .welcomeBoxHeaderBoxLetterO {
-  color: #ecc05b;
+  color: var(--secondary-color);
   font-size: 70px;
 
   @media (max-width: 1000px) {
@@ -81,8 +81,8 @@
 }
 
 .portfolioButton {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   padding: 15px 30px;
   margin: 10px;
   cursor: pointer;
@@ -90,8 +90,8 @@
   text-align: center;
 
   &:hover {
-    background-color: #ffffff;
-    color: #1d1d1d;
+    background-color: var(--text-color);
+    color: var(--background-color);
   }
 }
 
@@ -102,15 +102,15 @@
 }
 
 .contactMeButton {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
   padding: 15px 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-align: center;
 
   &:hover {
-    background-color: #ffffff;
-    color: #1d1d1d;
+    background-color: var(--text-color);
+    color: var(--background-color);
   }
 } 

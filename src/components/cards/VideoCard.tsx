@@ -28,7 +28,7 @@ const VideoCard = ({ video }: VideoCardProps) => {
       {video.hasDescription && video.description && (
         <div className={styles.videoDescription}>
           <div className={styles.artist}>{video.description.artist}</div>
-          <div className={styles.title}>"{video.description.title}"</div>
+          <div className={styles.title}>&quot;{video.description.title}&quot;</div>
           <div className={styles.releaseInfo}>
             Released by {video.description.releasedBy} in{' '}
             {video.description.releasedInYear}

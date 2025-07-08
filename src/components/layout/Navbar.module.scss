@@ -1,14 +1,13 @@
 .navbar {
   width: 100%;
   padding: 15px 30px;
-  background-color: rgba(29, 29, 29, 0.8);
+  background-color: var(--navbar-background-color);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--border-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  color: #fff;
 }
 
 .navContainer {
@@ -24,7 +23,7 @@
   font-size: 22px;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .navLinks {
@@ -42,16 +41,16 @@
 
   a {
     text-decoration: none;
-    color: #ccc;
+    color: var(--text-secondary);
     font-size: 18px;
     transition: color 0.3s;
 
     &:hover {
-      color: #fff;
+      color: var(--text-color);
     }
 
     &.active {
-      color: #6f70c4;
+      color: var(--primary-color);
       font-weight: bold;
     }
   }
@@ -63,7 +62,8 @@
   z-index: 1001;
 
   img {
-    filter: invert(1);
+    // This will make the icon visible in both light and dark mode
+    filter: var(--theme-icon-filter, invert(1));
   }
 }
 
@@ -72,7 +72,7 @@
 }
 
 .themeToggleMobile {
-    display: none;
+  display: none;
 }
 
 // Mobile Styles
@@ -80,7 +80,7 @@
   .menuButton {
     display: block; // Show on mobile
   }
-  
+
   .themeToggleDesktop {
     display: none;
   }
@@ -91,14 +91,14 @@
     top: 20px;
     right: 80px;
   }
-  
+
   .navLinks {
     position: fixed;
     top: 0;
     right: -100%; // Start off-screen
     width: 100%;
     height: 100vh;
-    background-color: #1d1d1d;
+    background-color: var(--navbar-background-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -118,4 +118,4 @@
       }
     }
   }
-} 
+}

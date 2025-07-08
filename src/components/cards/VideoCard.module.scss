@@ -1,10 +1,10 @@
 .videoCard {
   display: flex;
   flex-direction: column;
-  background-color: #2a2a2a;
+  background-color: var(--background-secondary);
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #444;
+  border: 1px solid var(--border-color);
 }
 
 .videoPlayer {
@@ -23,7 +23,7 @@
 
 .videoDescription {
   padding: 15px;
-  color: #dddddd;
+  color: var(--text-secondary);
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -33,24 +33,24 @@
 .artist {
   font-weight: bold;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .title {
   font-style: italic;
-  color: #cccccc;
+  color: var(--text-secondary);
 }
 
 .releaseInfo {
   font-size: 12px;
-  color: #aaaaaa;
+  color: var(--text-secondary);
 }
 
 .myRole {
   margin-top: 5px;
   padding-top: 5px;
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--border-color);
   font-weight: bold;
   text-transform: capitalize;
-  color: #6f70c4;
+  color: var(--primary-color);
 }

@@ -1,7 +1,14 @@
 // scss/themes/_light.scss
 :root {
-    --background-color: #ffffff;
+    --background-color: #f0f0f0;
+    --background-secondary: #ffffff;
     --text-color: #111111;
+    --text-secondary: #555555;
+    --primary-color: #6f70c4;
+    --secondary-color: #ecc05b;
+    --border-color: #dddddd;
     --primary-accent: #0070f3;
+    --theme-icon-filter: none;
+    --navbar-background-color: rgba(240, 240, 240, 0.8);
 }
   

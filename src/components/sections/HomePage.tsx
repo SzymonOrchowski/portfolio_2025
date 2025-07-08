@@ -21,7 +21,7 @@ const HomePage = () => {
           </header>
         </div>
         <div className={styles.welcomeBoxPortfolioButtonsBox}>
-          <Link href="/coding" style={{ textDecoration: 'none' }}>
+          <Link href="/webdev" style={{ textDecoration: 'none' }}>
             <div className={`${styles.portfolioButton} ${styles.portfolioButton1}`}>
               My Dev Portfolio
             </div>

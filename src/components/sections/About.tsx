@@ -12,7 +12,7 @@ const About = () => {
           </header>
           <div className={styles.webDevAboutMeContentText}>
             <p>
-              I'm Szymon. I'm a junior full-stack developer. I like adventures,
+              I&apos;m Szymon. I&apos;m a junior full-stack developer. I like adventures,
               and I try to make my life a big adventure by doing creative things
               and projects together with outstanding people I have the luck to
               meet on my life path. I love discovering new technologies and

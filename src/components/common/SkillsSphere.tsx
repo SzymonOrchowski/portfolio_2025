@@ -28,14 +28,18 @@ const skillIcons = [
   ReactLogo, SQLLogo
 ];
 
-function SkillIcon(props: any) {
+interface SkillIconProps extends React.ComponentProps<'mesh'> {
+  texture: string;
+}
+
+function SkillIcon({ texture, ...props }: SkillIconProps) {
   const mesh = useRef<THREE.Mesh>(null!);
-  const texture = useTexture(props.texture as string);
+  const loadedTexture = useTexture(texture);
 
   return (
     <mesh {...props} ref={mesh}>
       <planeGeometry args={[1, 1]} />
-      <meshLambertMaterial map={texture} transparent={true} side={THREE.DoubleSide} />
+      <meshLambertMaterial map={loadedTexture} transparent={true} side={THREE.DoubleSide} />
     </mesh>
   );
 }
@@ -58,7 +62,7 @@ const LogosGroup = () => {
     [-1.4, 1.4, 0], [1.4, 1.4, 0],
     [0, -1.4, -1.4], [0, 1.4, -1.4],
     [0, -1.4, 1.4], [0, 1.4, 1.4]
-  ];
+  ] as const;
 
   return (
     <group ref={group} dispose={null}>
