@@ -1,0 +1,116 @@
+.welcomePageContainer {
+  background-color: #1d1d1d;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: unset;
+  scrollbar-width: none;
+  display: flex;
+  position: relative;
+}
+
+.welcomeBox {
+  width: 90%;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  @media (max-width: 800px) {
+    margin-left: 17px;
+    margin-right: 40px;
+  }
+}
+
+.welcomeBoxHeaderBox {
+  margin: 20px;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+
+  @media (max-width: 1000px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 800px) {
+    margin: 0px 0px 0px 12px;
+    font-size: 30px;
+  }
+}
+
+.welcomeBoxHeaderBoxLetterS {
+  color: #6f70c4;
+  font-size: 70px;
+
+  @media (max-width: 1000px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 50px;
+  }
+}
+
+.welcomeBoxHeaderBoxLetterO {
+  color: #ecc05b;
+  font-size: 70px;
+
+  @media (max-width: 1000px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 50px;
+  }
+}
+
+.welcomeBoxPortfolioButtonsBox {
+  display: flex;
+  margin: 20px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+}
+
+.portfolioButton {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1d1d1d;
+  }
+}
+
+.welcomeBoxContactButtonBox {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactMeButton {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1d1d1d;
+  }
+}

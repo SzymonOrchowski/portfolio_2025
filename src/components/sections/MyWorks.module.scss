@@ -1,0 +1,55 @@
+.myWorks {
+  padding: 100px 20px;
+  background-color: #181818;
+}
+
+.myWorksHeader {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.videoCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+
+  button {
+    padding: 10px 15px;
+    border: 1px solid #616165;
+    background-color: #1d1d1d;
+    color: #616165;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover:not(:disabled) {
+      background-color: #616165;
+      color: #1d1d1d;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &.active {
+      background-color: #6f70c4;
+      color: #ffffff;
+      border-color: #6f70c4;
+    }
+  }
+}

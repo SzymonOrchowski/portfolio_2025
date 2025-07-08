@@ -1,0 +1,20 @@
+.contactPage {
+  padding: 150px 20px 100px 20px; // Extra top padding to offset fixed navbar
+  min-height: 100vh;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    color: #ccc;
+  }
+} 
