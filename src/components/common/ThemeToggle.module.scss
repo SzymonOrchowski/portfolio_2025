@@ -1,0 +1,19 @@
+.themeToggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color); // Use CSS variable from your theme
+
+  // This ensures the SVG color matches the text color
+  svg {
+    stroke: currentColor; 
+  }
+
+  &:hover {
+    color: var(--primary-color); // Use a primary color for hover effect
+  }
+} 
